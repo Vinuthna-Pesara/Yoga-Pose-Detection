@@ -1,0 +1,84 @@
+/* Yoga Container */
+.body{
+background-color: #2c3e50;
+}
+
+.yoga-container {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #2c3e50; /* Dark blue-gray background for the container */
+}
+
+/* Secondary Button */
+.secondary-btn {
+    position: relative;
+    left: 45%;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    border-color: rgba(125, 125, 125, 0.1);
+    border-width: 5px;
+    background-color: #34495e; /* Darker shade for button background */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Added shadow for better visual effect */
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.secondary-btn:hover {
+    background-color: #1abc9c; /* Lighter greenish-blue on hover */
+}
+
+/* Starting Countdown */
+.starting-contdown {
+    margin: auto;
+    border: 10px solid rgba(125, 125, 125, 0.5);
+    width: max-content;
+    padding: 10px 30px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.4); /* Dark background with slight transparency */
+    position: relative;
+    top: 45%;
+}
+
+.starting-contdown h1 {
+    color: white;
+}
+
+/* Pose Image */
+.pose-img {
+    position: absolute;
+    right: 120px;
+    top: 80px;
+    width: 500px;
+    aspect-ratio: 1;
+    border-radius: 8px; /* Add rounded corners */
+}
+
+/* Performance Container */
+.performance-container {
+    display: flex;
+    padding: 20px;
+    position: absolute;
+    left: 150px;
+    background-color: #2c3e50; /* Dark background for performance container */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.pose-performance {
+    margin: 10px 10px;
+    background-color: #ecf0f1; /* Light gray background for each performance box */
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.pose-performance h4 {
+    color: #2c3e50; /* Dark text color for the header */
+}
+
+/* Webcam and Canvas Rotation */
+#webcam {
+    transform: rotateY(180deg);
+}
+
+#my-canvas {
+    transform: rotateY(180deg);
+}

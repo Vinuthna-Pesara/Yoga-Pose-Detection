@@ -1,0 +1,183 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #f0f0f0;
+    background-color: #121212; /* Dark gray background */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Header Section */
+.home-header {
+    background: linear-gradient(100deg, #2c3e50, #34495e); /* Dark blue tones */
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.home-header .btn-container {
+    display: flex;
+    gap: 1px;
+}
+
+/* Main Content */
+.home-container {
+    background: #000;
+}
+
+.home-heading {
+    font-size: 44px;
+    color: #ecf0f1; /* Light gray text color */
+    font-family: 'Kaushan Script', cursive;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+/* Main Section with Background Image */
+.home-main {
+    margin: 0 auto;
+    width: 100%;
+    height: 90vh; /* Adjust the height for better responsiveness */
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)),
+                url('https://thumbs.dreamstime.com/b/yoga-girl-lake-sunrise-silhouette-doing-next-to-summer-60300563.jpg') no-repeat center/cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+/* Description Text */
+.description {
+    font-size: 66px;
+    color: #ecf0f1; /* Light gray text */
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+/* Button Section */
+.btn-section {
+    position: absolute;
+    left: 50%;
+    top: 40vh;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+/* Buttons Styling */
+.btn {
+    padding: 12px 24px;
+    margin: 10px;
+    background-color: transparent;
+    color: #ecf0f1; /* Light gray text */
+    font-size: 30px;
+    border: 2px solid #2c3e50; /* Orange border */
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: rgba(255, 165, 0, 0.2);
+    color: #ecf0f1;
+    transform: scale(1.05);
+}
+
+/* Header Button Styling */
+.header-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: transparent;
+    border: 2px solid #2c3e50; /* Orange border */
+    border-radius: 8px;
+    color: #ecf0f1;
+    transition: all 0.3s ease;
+}
+
+.header-btn:hover {
+    border-color: #f39c12;
+    background-color: rgba(255, 165, 0, 0.2);
+    transform: scale(1.05);
+}
+
+/* Scrollbar */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Button Focus Styling */
+#header-btn {
+    padding: 5px 10px;
+}
+
+#header-btn:hover,
+#header-btn:focus {
+    border-color: white;
+    background-color: rgba(255, 165, 0, 0.2);
+    box-shadow: none;
+}
+
+/* Accessibility: Focus State */
+.header-btn:focus,
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.8);
+    border-color: #f39c12;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .home-header {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 10px 20px;
+    }
+
+    .home-heading {
+        font-size: 32px;
+    }
+
+    .description {
+        font-size: 48px;
+    }
+
+    .btn-section {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 20px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 18px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-header {
+        padding: 10px 15px;
+    }
+
+    .home-heading {
+        font-size: 28px;
+    }
+
+    .description {
+        font-size: 36px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+}
